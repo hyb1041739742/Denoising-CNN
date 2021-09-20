@@ -1,0 +1,12 @@
+clear all;
+t=0.0:0.002:0.3;
+y=cos(2*pi*60*t);
+seismic=s_convert(y',0,2);
+sei=s_hilbert(seismic, {'output','hilbert'});
+%s_wplot(sei);
+%s_compare(seismic,sei);
+sei1_angle=angle(fft(seismic.traces));
+sei2_angle=angle(fft(sei.traces));
+figure;
+subplot(212);plot((sei2_angle));
+subplot(211);plot((sei1_angle));

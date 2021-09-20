@@ -1,0 +1,9 @@
+
+SU-SEGY trace headers are given by the
+following two structures:
+
+segy_struct.m   -> header words 
+count_struct.m  -> header words position in bytes
+
+
+functions to read/ and write SU-segy's (SU: SeismicUn*x)
