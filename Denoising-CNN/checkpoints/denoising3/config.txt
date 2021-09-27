@@ -30,6 +30,6 @@ Parameter Group 0
     weight_decay: 0
 ))
 StatsManager(DenoisingStatsManager)
-BatchSize(4)
+BatchSize(10)
 PerformValidationDuringTraining(True)
 
