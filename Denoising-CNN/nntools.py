@@ -273,8 +273,8 @@ class Experiment(object):
             else:
                 self.history.append(
                     (self.stats_manager.summarize(), self.evaluate()))
-            print("Epoch {} (Time: {:.2f}s)".format(
-                self.epoch, time.time() - s))
+            print("Epoch {} (Time: {:.2f}s)(loss: {:.7f})".format(
+                self.epoch, time.time() - s), self.stats_manager.summarize())
             self.save()
             if plot is not None:
                 plot(self)
