@@ -19,8 +19,8 @@ Net : DnCNN(
     (5): BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
   )
 ) 
-TrainSet : <__main__.GetDataset object at 0x0000023CA4351190> 
-ValSet : <__main__.GetDataset object at 0x0000023C9E978910> 
+TrainSet : Size is 452 
+ValSet : Size is 4568 
 Optimizer : Adam (
 Parameter Group 0
     amsgrad: False
