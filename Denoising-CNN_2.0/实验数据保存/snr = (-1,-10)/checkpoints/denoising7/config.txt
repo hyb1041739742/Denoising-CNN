@@ -1,0 +1,57 @@
+Net : FDUDDnCNN(
+  (mse): MSELoss()
+  (conv): ModuleList(
+    (0): Conv1d(2, 64, kernel_size=(3,), stride=(1,), padding=(1,))
+    (1): Conv1d(65, 64, kernel_size=(3,), stride=(1,), padding=(1,))
+    (2): Conv1d(65, 64, kernel_size=(3,), stride=(1,), padding=(2,), dilation=(2,))
+    (3): Conv1d(65, 64, kernel_size=(3,), stride=(1,), padding=(4,), dilation=(4,))
+    (4): Conv1d(65, 64, kernel_size=(3,), stride=(1,), padding=(4,), dilation=(4,))
+    (5): Conv1d(65, 64, kernel_size=(3,), stride=(1,), padding=(2,), dilation=(2,))
+    (6): Conv1d(65, 64, kernel_size=(3,), stride=(1,), padding=(1,))
+    (7): Conv1d(65, 1, kernel_size=(3,), stride=(1,), padding=(1,))
+  )
+  (bn): ModuleList(
+    (0): BatchNorm1d(64, eps=64, momentum=0.1, affine=True, track_running_stats=True)
+    (1): BatchNorm1d(64, eps=64, momentum=0.1, affine=True, track_running_stats=True)
+    (2): BatchNorm1d(64, eps=64, momentum=0.1, affine=True, track_running_stats=True)
+    (3): BatchNorm1d(64, eps=64, momentum=0.1, affine=True, track_running_stats=True)
+    (4): BatchNorm1d(64, eps=64, momentum=0.1, affine=True, track_running_stats=True)
+    (5): BatchNorm1d(64, eps=64, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (FCN): ModuleList(
+    (0): Conv1d(1, 64, kernel_size=(1,), stride=(1,))
+    (1): Conv1d(64, 64, kernel_size=(1,), stride=(1,), dilation=(2,))
+    (2): Conv1d(64, 64, kernel_size=(1,), stride=(1,), dilation=(3,))
+    (3): Conv1d(64, 64, kernel_size=(1,), stride=(1,), dilation=(5,))
+    (4): Conv1d(64, 64, kernel_size=(1,), stride=(1,), dilation=(2,))
+    (5): Conv1d(64, 64, kernel_size=(1,), stride=(1,), dilation=(3,))
+    (6): Conv1d(64, 64, kernel_size=(1,), stride=(1,), dilation=(5,))
+    (7): Conv1d(64, 64, kernel_size=(3,), stride=(1,), padding=(2,), dilation=(2,))
+    (8): Conv1d(64, 64, kernel_size=(3,), stride=(1,), padding=(3,), dilation=(3,))
+    (9): Conv1d(64, 64, kernel_size=(3,), stride=(1,), padding=(5,), dilation=(5,))
+    (10): Conv1d(64, 64, kernel_size=(3,), stride=(1,), padding=(2,), dilation=(2,))
+    (11): Conv1d(64, 64, kernel_size=(3,), stride=(1,), padding=(3,), dilation=(3,))
+    (12): Conv1d(64, 64, kernel_size=(3,), stride=(1,), padding=(5,), dilation=(5,))
+    (13): Conv1d(64, 64, kernel_size=(5,), stride=(1,), padding=(4,), dilation=(2,))
+    (14): Conv1d(64, 64, kernel_size=(5,), stride=(1,), padding=(6,), dilation=(3,))
+    (15): Conv1d(64, 64, kernel_size=(5,), stride=(1,), padding=(10,), dilation=(5,))
+    (16): Conv1d(64, 64, kernel_size=(5,), stride=(1,), padding=(4,), dilation=(2,))
+    (17): Conv1d(64, 64, kernel_size=(5,), stride=(1,), padding=(6,), dilation=(3,))
+    (18): Conv1d(64, 64, kernel_size=(5,), stride=(1,), padding=(10,), dilation=(5,))
+    (19): Conv1d(64, 64, kernel_size=(1,), stride=(1,))
+    (20): Conv1d(64, 1, kernel_size=(1,), stride=(1,))
+  )
+) 
+TrainSet : Size is 4518 
+ValSet : Size is 502 
+Optimizer : Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    lr: 0.001
+    weight_decay: 0
+) 
+StatsManager : DenoisingStatsManager 
+BatchSize : 10 
+
